@@ -1,35 +1,180 @@
+h1 {
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 550;
+	font-width: 1.25;
+	line-height: 26.4px;
+	font-size: 5em;
+	color: #385623;
+	text-align: center;
+}
 
-h1{
-	font-size: 2.5em;
+
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 3px;
 }
-h2{
-	font-size: 1.5em;
+
+h2 {
+	font-size: 1.2em;
+	color: #004172;
+	text-align: left;
+	padding: 1em 0em 0em 0em;
 }
-body{
+h3{
+	font-size: 2em;
+	color: rgb(83, 129, 53);
+}
+
+body {
 	font-family: Helvetica;
-	padding: 2em;
+	padding: 2.5em;
 	background-color: whitesmoke;
 }
 
-.pop{
+button {
+	width: 25%;
+	border-radius: 15px 15px 0px 0px;
+	
+}
+
+
+/* Image cropping */
+.imgWithText {
+	float: left;
+	text-align: left;
+	word-wrap: normal;
+	border-width: 150px;
+	padding: 0.5em 0.5em 0.5em 1em;
+
+}
+
+img {
+	max-height: 300px;
+
+}
+
+.jobTitle{
+	font-style: strong;
+	font-color: #2f5496;
+}
+
+.proObjectives {
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-style: italic;
+	font-size: 0.9em;
+	background-color: #C8E7FE;
+	padding: 1em 1em 1em 1em;
+	border-radius: 10px;
+}
+
+.pop {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.backing1{
-	background-color: #E55126;
-}
 
-.backing1{
+.backing1 {
+	background-color: #7A9F80;
 	border-radius: 25px;
-	width: 20em;
+	width: 30em;
 	padding: 1em 3em 2em 2em;
 	margin: 0.5em;
-	color:whitesmoke;
+	color: whitesmoke;
 }
 
-.innerText{
+.innerText {
 	font-size: 0.5em;
 	font-family: Courier;
+}
+
+/*Tab styles */
+
+
+.tab{
+  overflow: hidden;
+ 
+  background-color: #f1f1f1;
+  border-radius: 15px 15px 0px 0px;
+  
+}
+
+.tab button {
+  background-color: #e6efdc;
+  float: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #8fb762;
+}
+
+.tab button.active {
+  background-color: #769d48;
+  border-bottom: none;
+}
+
+.tabcontent {
+  background-color: #f3f7ee;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+/*Animations */
+h1 {
+	animation: fadeIn 1s;
+}
+
+h2 {
+	animation: fadeIn 1.5s;
 	
 }
+
+.proObjectives{
+
+	animation: fadeIn 2s;
+}
+
+hr{
+	animation: fadeIn 2.3s;
+}
+.tab {
+
+	animation: fadeIn 2.5s;
+}
+
+.tabcontent {
+	animation: tabFade 1s; 
+}
+
+.tabcontent.default {
+	animation: fadeIn 3s;
+}
+/* Effects */
+@keyframes fadeIn {
+ 0% {opacity: 0;}
+ 50% {opacity: 0;}
+ 75% { opacity: 0.5;}
+ 100% {opacity: 1;}
+ 
+} 
+
+@keyframes tabFade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+
+
