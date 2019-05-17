@@ -1,3 +1,4 @@
+/*Build in style mods*/
 h1 {
 	font-family: Tahoma, Verdana, Segoe, sans-serif;
 	font-style: normal;
@@ -45,20 +46,18 @@ button {
 	
 }
 
-
 /* Image cropping */
 .imgWithText {
 	float: left;
 	text-align: left;
+	background-color: #e6f4ff; 
 	word-wrap: normal;
-	border-width: 150px;
-	padding: 0.5em 0.5em 0.5em 1em;
-
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border: 1px solid black;
 }
 
-img {
-	max-height: 300px;
-
+img{
+	border: 1px solid #385623
 }
 
 .jobTitle{
@@ -131,6 +130,7 @@ img {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  padding-bottom: 5em;
 } 
 /*Animations */
 h1 {
@@ -154,14 +154,14 @@ hr{
 
 	animation: fadeIn 2.5s;
 }
-
+.tabcontent.default {
+	animation: fadeIn 3s;
+}
 .tabcontent {
 	animation: tabFade 1s; 
 }
 
-.tabcontent.default {
-	animation: fadeIn 3s;
-}
+
 /* Effects */
 @keyframes fadeIn {
  0% {opacity: 0;}
